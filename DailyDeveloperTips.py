@@ -9,7 +9,7 @@ def get_tokens(fileName = os.path.join(os.getcwd(), 'tokens.ini'), section = 'to
     parser = ConfigParser()
     parser.read(fileName)
 
-    # get section, default to postgresql
+    # get section, default to tokens
 
     db = {}
     if parser.has_section(section):
